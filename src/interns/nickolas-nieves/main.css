@@ -1,0 +1,235 @@
+:root {
+    --color-purple: #741ed4;
+    --color-black: #333333;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    color: var(--color-black);
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20pt;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+a {
+    color: var(--color-purple);
+}
+
+.wrapper {
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 1200px;
+    height: auto;
+}
+
+.header {
+    flex-direction: row;
+    display: flex;
+    padding-top: 50px;
+}
+
+.image {
+    position: relative;
+    width: 500px;
+}
+
+.back {
+    background-color: var(--color-purple);
+    position: absolute;
+    width: inherit;
+    height: 333.375px;
+    transform: translateY(-317px) translateX(20px);
+    z-index: -1;
+}
+
+.header-name {
+    width: 500px;
+    margin: auto;
+}
+
+.content {
+    padding-top: 20px;
+    width: 1200px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.top-bar {
+    position: absolute;
+    margin: 50px 200px 0 200px;
+    width: 800px;
+    height: 20px;
+    background-color: #aaaaaa;
+    border-radius: 5px 5px 0 0;
+}
+
+.exit {
+    position: absolute;
+    margin: 50px 200px 0 200px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 65, 65);
+    border-radius: 5px;
+    z-index: 1;
+    transform: translateX(5px) translateY(5px);
+}
+
+.min {
+    position: absolute;
+    margin: 50px 200px 0 200px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 224, 50);
+    border-radius: 5px;
+    z-index: 1;
+    transform: translateX(20px) translateY(5px);
+}
+
+.max {
+    position: absolute;
+    margin: 50px 200px 0 200px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(25, 204, 55);
+    border-radius: 5px;
+    z-index: 1;
+    transform: translateX(35px) translateY(5px);
+}
+
+.window {
+    margin: 50px auto 100px auto;
+    width: 800px;
+    height: 550px;
+    position: relative;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.095);
+    border-radius: 5px;
+}
+
+.answer {
+    font-size: 15pt;
+    letter-spacing: .3pt;
+    line-height: 20pt;
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 600px;
+    }
+    .header {
+        flex-direction: column;
+        margin: auto;
+    }
+    .header-name {
+        padding-top: 50px;
+        width: 500px;
+    }
+    .image {
+        width: 600px;
+    }
+    .back {
+        width: 600px;
+        height: 403px;
+        transform: translateY(-385px) translateX(20px);
+    }
+    .content {
+        width: 600px;
+    }
+    .window {
+        width: 600px;
+        height: 500px;
+        margin: 50px auto 100px auto;
+    }
+    .top-bar {
+        width: 600px;
+        margin: 50px 0 0 0;
+    }
+    .min {
+        margin: 50px 0 0 0;
+    }
+    .max {
+        margin: 50px 0 0 0;
+    }
+    .exit {
+        margin: 50px 0 0 0;
+    }
+    .answer {
+        padding-top: 40px;
+        width: 500px;
+        font-size: 12pt;
+        line-height: 16pt;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 375px;
+    }
+    .header {
+        flex-direction: column;
+        margin: auto;
+        padding-top: 25px;
+    }
+    .header-name {
+        padding-top: 25px;
+        width: 300px;
+    }
+    h3 {
+        font-style: italic;
+        font-size: 15pt;
+    }
+    h1 {
+        font-size: 25pt;
+    }
+    .image {
+        width: 350px;
+    }
+    .back {
+        display: none;
+    }
+    .content {
+        width: 375px;
+    }
+    .window {
+        width: 350px;
+        height: 650px;
+        margin: 25px auto 100px auto;
+    }
+    .top-bar {
+        width: 350px;
+        margin: 25px 12.5px 0 12.5px;
+    }
+    .min {
+        margin: 25px 12.5px 0 12.5px;
+    }
+    .max {
+        margin: 25px 12.5px 0 12.5px;
+    }
+    .exit {
+        margin: 25px 12.5px 0 12.5px;
+    }
+    .answer {
+        padding-top: 40px;
+        width: 300px;
+        font-size: 12pt;
+        line-height: 16pt;
+    }
+}
